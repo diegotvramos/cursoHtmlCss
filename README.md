@@ -114,3 +114,30 @@ despues de los h's ya tienen un salto nativo
 `<hr>` es un salto semantico de contenido
 
 https://madebymike.github.io/html5-periodic-table/#strong 
+
+
+<h2>19 Etiquetas de formateo</h2>
+
+            ´<pre>`
+                Tareas por hacer
+            -HTML
+                - terminar de grabar las secciones de este curso.
+                - Editar  en un solo video.
+            -CSS.
+                -comenzar a grabar secciones CSS.
+                -Editar en un solo video.
+            </pre>`
+
+la etiqueta `<pre>` respeta el formateo que tu le estes dando
+
+<hr>
+<h2>etiqueta semantica estructurales.</h2>
+
+    nos van ayudar a definir zonas de maquetacion para delimitar areas de secciones ej: cabezera, pie de página,  el contenido principal
+    la publicidad el contenido lateral, si lo queremos a 3 columnas a 2 columnas.
+
+    si has usado template de jumbla, wordpres o template que te hayas descargado o en los mismos ejemplos que vienen de codigo frameworks como bootstrap, fundation donde todo su codigo está con divs divs
+
+    ![imagen](/assets/estructura_semantica_html5.jpg). 
+
+el proceso de maquitacion va depender mucho de como queras planificar el diseño  de tus aplicaciones o de tus sitios web

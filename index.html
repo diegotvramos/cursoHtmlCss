@@ -13,7 +13,7 @@
     <HR></HR>
     <h2>Encabezados html</h2>
 
-    <h1>Encabezado de nivel 1</h1>
+    <h1>Encabezado de nivel 1 solo puede existir un h1 por documento html</h1>
     <h2>Encabezado de nivel 2</h2>
     <h3>Encabezado de nivel 3</h3>
     <h4>Encabezado de nivel 4</h4>
@@ -53,5 +53,59 @@
     </p>
     <hr>
     <h2>Etiquetas de Formateo</h2>
+        <p>
+            <pre>
+                Tareas por hacer
+            -HTML
+                - terminar de grabar las secciones de este curso.
+                - Editar  en un solo video.
+            -CSS.
+                -comenzar a grabar secciones CSS.
+                -Editar en un solo video.
+            </pre>
+        </p>
+
+    <p>
+        <code>
+            Este texto está en formato de codigo.
+        </code>
+    </p>
+    <p>
+        <pre>
+            <code>
+                import React from "react";
+                import Title from "./Title";
+
+                function App {
+                    return &lt;Title /&gt;
+                }
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <h2>etiqueta semantica estructurales.</h2>
+    <div>Es una etiqueta contenedora que no tiene semantica</div>
+    <header>header- Cabecera de un sitio web o de una seccion.</header>
+    <main>
+        main- Define la session  principal del documento. Solo puede existir una etiqueta main por documento
+    </main>
+
+    <footer>footer- Representa pie de pagina de un sito web o de una seccion </footer>
+    <nav>nav- Representa la navegacion</nav>
+    <article>
+        article-Representa una seccion Autocontenido(que por si sola se explica)
+    </article>
+    <aside>
+        aside- Representa un contenido complementario o secundario
+    </aside>
+
+    <section>
+        section- Representa una seccion de contenido generico
+    </section>
+    <blockquote> eso de la semantica va ser muy subjetivo segun el contenido que vayas definiendo en tu sitio web </blockquote>
+
+    <address>address- representa informacion de contacto</address>
+
+    antes de utilizar una DIV trata de utilizar cualquiera de las etiquetas semanticas anteriores
 </body>
 </html>
