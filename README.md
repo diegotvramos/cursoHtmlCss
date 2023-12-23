@@ -33,7 +33,7 @@ lo recomendable es ir a la documentacion, foros
 hipertext: en griego significa NAVEGACION.
 
 *head* 
-en el ``<head>`` es para enlazar otro tipo de archivos: css js img para iconos de moviles favicon en los navegadores titulos y las descripciones ceo de paginas. (todo lo que esta en la cabezera se considera metainformacion) {HABLA DE LA PAGINA PERO LOS USUARIOS NO LO VEN } 
+en el ``<head>`</head>`` es para enlazar otro tipo de archivos: css js img para iconos de moviles favicon en los navegadores titulos y las descripciones ceo de paginas. (todo lo que esta en la cabezera se considera metainformacion) {HABLA DE LA PAGINA PERO LOS USUARIOS NO LO VEN } 
 
 *BODY*
 todo lo que queremos que se vea en la pagina
@@ -84,7 +84,8 @@ debe estar con un titulo y una meta descripcion (cada documento html)
 <h2>Tabla periodica de los elementos html</h2>
 
 <p>de preferencia no debes tener texto suelto en el body siempre debe estar envuelto en una etiqueta
-    todo lo nuevo que vaya saliendo siempre es en Ingles, entonces el Ingles debe ser un exelente compañero tuyo en este maravilloso mundo de la programacion
+    todo lo nuevo que vaya saliendo siempre es en Ingles, entonces el Ingles debe ser un exelente compañero tuyo en este maravilloso mundo de la programacion.
+
 ![imagen](/assets/html-periodic-table.png)
 
 </p>
@@ -128,7 +129,7 @@ https://madebymike.github.io/html5-periodic-table/#strong
                 -Editar en un solo video.
             </pre>`
 
-la etiqueta `<pre>` respeta el formateo que tu le estes dando
+la etiqueta ``<pre></pre>`` respeta el formateo que tu le estes dando
 
 <hr>
 <h2>etiqueta semantica estructurales.</h2>
@@ -136,8 +137,75 @@ la etiqueta `<pre>` respeta el formateo que tu le estes dando
     nos van ayudar a definir zonas de maquetacion para delimitar areas de secciones ej: cabezera, pie de página,  el contenido principal
     la publicidad el contenido lateral, si lo queremos a 3 columnas a 2 columnas.
 
-    si has usado template de jumbla, wordpres o template que te hayas descargado o en los mismos ejemplos que vienen de codigo frameworks como bootstrap, fundation donde todo su codigo está con divs divs
+    si has usado template de jumbla, wordpres o template que te hayas descargado o en los mismos ejemplos que vienen de codigo frameworks como bootstrap, fundation donde todo su codigo está con divs divs 
 
-    ![imagen](/assets/estructura_semantica_html5.jpg). 
+![imagen2](/assets/estructura_semantica_html5.jpg)
+
 
 el proceso de maquitacion va depender mucho de como queras planificar el diseño  de tus aplicaciones o de tus sitios web
+<h2>Etiquetas de bloque VS etiquetas de linea</h2>
+la mayoria de las etiquetas html van a ser de NATURALEZA DE BLOQUE O NATURALEZA DE LINEA
+EJE los encabezados son etiquetas de bloque, parrafos. y las etiquetas de texto como  (em, strong, bloqu, italic ... bold)
+
+las etiquetas de bloque son evidiosas por que van a ocupar todo el ancho disponible y generan saltos de linea con las etiquetas que tienen de hermanas y las etiquetas de Linea van a ocupar el espacio que requieren
+
+<h2>Scripts en HTML</h2>
+DEBEN IR AL FINAL ANTES DEL CIERRE DE LA ETIQUETA BODY.
+LO IDEAL ES QUE ESTÉ EN UN ARCHIVO INDEPENDIENTE.
+
+SRC= source. ORIGEN O FUENTE
+formatos soportados: jpg, png, gif, svg(es un vector)
+    la altura y la anchura lo debemos modificar desde el codigo CSS 
+<h2>vectores SVG</h2>
+este tipo de imagenes son en realidad vectores, puedes hacer el logo en ilustrator.
+el código en el cual está echo este logo es xml.
+la pagina donde puedes descargar iconos SVG es: 
+
+> - https://css.gg/
+> - https://www.svgrepo.com/vectors/mechanic/2 es otra pagina
+
+cuando se hace una pagina web ya es mas comun pedirlas en vector
+
+<h2>figuras</h2>
+
+recuerdas que en la primaria teniamos libros de historia, geografia, biologia y al pie de esas imagenes decia: fugura 1.1 ciclo del agua,
+tambien podemos agregar un video que tenga nota al pie
+
+alt= texto alternativo para los scren reader (las personas que no pueden ver)
+
+<h2>Listas Ordenadas</h2>
+las listas tienen atributos {start(comienzo), tipo(a, i, )} lo que hay en un procesador de texto.
+<p>
+    <ol start="100">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+</p>
+
+<h2>Listas Desordenadas</h2>
+lo que en un procesador seria las listas con viñetas. la diferencia con las listas ordenadas son las viñetas en ves de numeros.
+
+`<ul type="circle"></ul>` en el type puedes ponerle: circle
+
+<h2>Listas De definicion</h2>
+necesitamos 2 elementos
+dt , dd
+tienen una sangria en el navegador, no son tan utilizadas
+
+<h2>tablas</h2>
+
+las tablas se utilizaban para maquetar ya hoy existe _grid y grid css_ hoy las tabla se utilizan para tabular datos
+
+colspan-sirve para conbinar celdas en columna.
+rowspan- sirve para conbinar celdas en filas
+
+<h2>enlaces</h2>
+sirve para anlazar localmente como externamente(los enlaces externos se le debe poner el protocolo HTTP[s] y el dominio)
+
+como estamos en el mismo sitio o en la misma aplicacion se entiende perfectamente que de un enlace a otro pues estemos moviendonos en la misma pestaña que el usuario este consumiendo nuestro contenido pero que pasa con las redes sociales o con los enlaces externos
+¿Como hacemos para que el enlace abra en otra pespaña?
+debemos hacer uso de un atributo llamado *target="_blank"* es como el objetivo, hacia donde queres que se abra
+
+para aclarar que nustra pagina no forma parte de el otro sitio

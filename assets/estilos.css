@@ -1,0 +1,17 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    color: navy;
+}
+
+/*aunque sean mas garde, el tamaño maximo que van a alcanzar es el de la pantall*/
+img{
+    max-width: 100%;
+    height: auto;
+}
