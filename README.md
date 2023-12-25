@@ -209,3 +209,47 @@ como estamos en el mismo sitio o en la misma aplicacion se entiende perfectament
 debemos hacer uso de un atributo llamado *target="_blank"* es como el objetivo, hacia donde queres que se abra
 
 para aclarar que nustra pagina no forma parte de el otro sitio
+
+<h2>enlaces internos</h2>
+
+sirve para mostrar la seccion de nuestra pagina usando el simbolo # en el _a href_
+https://emojipedia.org/
+a parte de que los enlaces nos sirven para generar anclas internas y poder acceder hacia otras rutas paginas, aplicaciones documentos html ya sean externos o internos dentro de nuestro sitio de aplicacion tambien podemos acceder hacia otros protocolos por ejemplo podriamos activar que mediante un enlace se abriera la aplicacion que tenemos predeterminada de correo electronico para poder mandar un mensaje de correo electronico tambien podriamos acceder a marcar un telefono oviamente desde nuestra pc no va funcionar, pero si lo consumimos desde nuestro telefono movil este tipo de protocolos si van a funcionar.
+
+<h2>enlaces y protocolos especiales</h2>
+
+hay algunas aplicaciones que estamos usando ultimamente para comunicarnos como: whatsap, telegram, mesenger que cada uno de esto, tiene sus propios protocolos.
+¿como podriamos poner un enlace hacia estos protocolos? 
+ vayanse a estas aplicaciones de comunicacion y las mismas les van a dar las urls
+
+>- <a href="https://api.whatsapp.com/send?phone=59176503020&">Enlace hacia WhatsApp</a>
+>- ?= signifia que puedes pasar valores     
+>- &= significa que le vas a pasar otra variable
+
+
+<h2 id="elementos-interactivos">Elementos Interactivos</h2>
+
+para mas informacion visiten la pagina: *https://htmlreference.io/element/a/* 
+botones, acordeon(details), modales.
+
+
+<h2>Audio y Video</h2>
+
+Se estila a que por cada tipo de archivo tengas una carpeta. 
+son etiquetas en linea, quiere decir que ocupan el espacio necesario, la visualizacion del reproductor depende del navegador, la funcionalidad es la misma
+
+algunos atributos boolean de la etiqueta audio: autoplay(en mobiles hay que otorgarles permisos es una regla de estandares web),
+loop- cuando acabe el track lo va volver a reproducir
+muted- comienza el audio muteado en silencio 
+preload- cuando cuano el navegador detecta que tu etiqueta audio tiene el atributo preload desde el momento que está cargando la pagina aunque el usuario no le de click al boton de play va empesar a _precargar_ en el caché del navegador
+
+
+<h2>Iframes (no recomendable)</h2>
+
+para hacer carga de informacion externa la mejor estrategia es con programacion de javascript a travez de peticiones via ajax pero cuando tengas la necesidad de incrustar un elemento que venga de otra pagina, imagina que tienes que cargar un PDF con cierta informacion en tu ducumento html esta etiqueta te va servir muy bien
+
+*no todo los sitios se pueden mandar a llamar con Iframes.*
+carga la informacion que tiene en el documento: pdf, html.
+pdf- son documentos que el navegador interpreta por si solos.
+
+*No es recomendable tener mas de un Iframe por documento html* por que el documento se vuelve lento
