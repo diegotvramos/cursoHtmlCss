@@ -253,3 +253,55 @@ carga la informacion que tiene en el documento: pdf, html.
 pdf- son documentos que el navegador interpreta por si solos.
 
 *No es recomendable tener mas de un Iframe por documento html* por que el documento se vuelve lento
+
+<h2>formulario</h2>
+        
+<h3>Elementos de formularios</h3>
+<!-- son inputs que no se van a ver sirven para que  para mandar algun valor 
+            hay que activarle el atributo name, es como el nombre de la variable que va tomar cuando se envie la informacion.
+        -->
+``<input type="hidden" name="idioma" value="es">``
+   <!-- el mobil detecta que es un imput de tipo Numero y el teclado lo pone el teclado numerico  -->
+``<input type="number">``
+
+ <h2>Atributos de inputs y Formularios</h2>
+
+el atributo action es hacia donde se va enviar 
+name- nombre de variable de formulario que se va crear para cada uno de los inputs
+https://jonmircha.com/?usuario=diego&password=1234 METODO GET
+el metodo GET es el metodo predeterminado de lso formularios y va enviar por la URL los valores
+POST- lo va enviar en las cabezeras del documento lo va enviar (de forma oculta)
+
+https://jonmircha.com/
+
+ya en la practica profecional el envio de los formularios generalmente se controla con programacion javascript e incluso
+haciendo peticiones con AJAX 
+
+el NAME si o si debe tener el ID es opcional
+al poner el valor usuario tanto en el atributo FOR de la etiqueta LABEL, y el ID de el INPUT estos se vinculan y lo podemos
+probar haciendo click en el label, y esto automaticamente saltará al input vinculado
+
+required- es un atributo booleano nos obliga a completar el campo
+
+pattern - es para las expreciones regulares
+
+title-  lo usa como mensaje de validacion
+
+¡Toda validacion del formulario se debe validar a nivel de programacion en JS idealmente si esa informacion se envia 
+a una base de datos antes de insertar o modificar los datos en el sistema tambien tendria que validarse a lado del servidor(php node, js)!
+´´
+    <h3>Ejemplo de formulario</h3>
+    <h4>Formulario de login</h4>
+    <form action="https://jonmircha.com/" method="POST" autocomplete="off">
+        <label for="usuario">Usuario: </label>
+        <input type="text" name="usuario" id="usuario" placeholder="escribe tu usuario" pattern="^[A-Za-z]+$" title="el campo solo acepta letras" required>
+        <br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" placeholder="escribe tu password" required>
+        <br>
+        <input type="submit">
+        <br>
+        <input type="reset">
+    </form>
+´´
+

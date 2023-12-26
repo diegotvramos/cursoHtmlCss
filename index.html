@@ -47,6 +47,8 @@
         <li><a href="index.html#elementos-interactivos">Elementos Interactivos</a></li>
         <li><a href="index.html#audio-video">Audio y Video</a></li>
         <li><a href="index.html#iframes">Iframes (carga paginas externas)</a></li>
+        <li><a href="index.html#formularios">formulario</a></li>
+        <li><a href="index.html#atributos-formularios">Atributos de inputs y Formularios</a></li>
 
         
     </ul>
@@ -438,12 +440,127 @@
     <br>
     <iframe src="/media/cheatsheet-a5.pdf" frameborder="0"></iframe>
     <br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15303.863087068557!2d-68.2121399508024!3d-16.47727074820418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915ede2810567c01%3A0xe88642823e7ae728!2sVilla%20Ingenio%2C%20El%20Alto!5e0!3m2!1ses!2sbo!4v1703467450496!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <br>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15303.863087068557!2d-68.2121399508024!3d-16.47727074820418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915ede2810567c01%3A0xe88642823e7ae728!2sVilla%20Ingenio%2C%20El%20Alto!5e0!3m2!1ses!2sbo!4v1703467450496!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br> -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/F55LNTW3GE0?si=azHQdUI4snB9WzVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+   
+    <a href="index.html#inicio">☝️</a>
 
+        <h2 id="formularios">formulario</h2>
+
+        <h3>Elementos de formularios</h3>
+        <input type="text">
+        <br>
+        <input type="checkbox">
+        <br>
+        <!-- solo una opcion -->
+        <input type="radio">
+        <br>
+        <input type="date">
+        <br>
+        <input type="color">
+        <br>
+        <input type="button" value="Boton">
+        <br>
+        <input type="submit">
+        <br>
+        <input type="reset">
+        <br>
+        <input type="file">
+        <br>
+        <input type="file" multiple>
+        <br>
+        <!-- son inputs que no se van a ver sirven para que  para mandar algun valor 
+            hay que activarle el atributo name, es como el nombre de la variable que va tomar cuando se envie la informacion.
+        -->
+        <input type="hidden" name="idioma" value="es">
+        <br>
+        <!-- input semantico, en el teclado tactil nos va agregar el arroba o el .com para facilitar la escritura -->
+        <input type="email">
+        <br>
+        <!-- el mobil detecta que es un imput de tipo Numero y el teclado lo pone el teclado numerico  -->
+        <input type="number">
+        <br>
+        <input type="tel">
+        <br>
+        <input type="password">
+        <br>
+        <input type="search">
+
+        <br>
+        <textarea cols="50" rows="5"></textarea>
+        <br>
+        <select name="" id="">
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JS</option>
+            <option value="">PHP</option>
+            <option value="">PYTHON</option>
+        </select>
+        <br>
+        <!-- Con el atributo Multiple te va permitir poner mas de una opcion. -->
+        <select name="" id="" multiple>
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JS</option>
+            <option value="">PHP</option>
+            <option value="">PYTHON</option>
+        </select>
+    <a href="index.html#inicio">☝️</a>
+    <hr>
+    <h2 id="atributos-formularios">Atributos de inputs y Formularios</h2>
+
+
+    <!-- el atributo "readonly" es un atributo boleano simpre va al final de la etiqueta 
+        si vas a tener un atributo de solo lectura te combiene desabilitarlo para que se se vea mejor
+    -->
+    <input type="text"  value="diegoTV" readonly disabled>
+    <br>
+    <input type="text" placeholder="Escribe tu nombre">
+    <br>
+    <!-- el atributo action es hacia donde se va enviar 
+        name- nombre de variable de formulario que se va crear para cada uno de los inputs
+        https://jonmircha.com/?usuario=diego&password=1234 METODO GET
+        el metodo GET es el metodo predeterminado de lso formularios y va enviar por la URL los valores
+        POST- lo va enviar en las cabezeras del documento lo va enviar (de forma oculta)
+
+        https://jonmircha.com/
+
+        ya en la practica profecional el envio de los formularios generalmente se controla con programacion javascript e incluso
+        haciendo peticiones con AJAX 
+
+        el NAME si o si debe tener el ID es opcional
+        al poner el valor usuario tanto en el atributo FOR de la etiqueta LABEL, y el ID de el INPUT estos se vinculan y lo podemos
+        probar haciendo click en el label, y esto automaticamente saltará al input vinculado
+
+        required- es un atributo booleano nos obliga a completar el campo
+
+        pattern - es para las expreciones regulares
+
+        title-  lo usa como mensaje de validacion
+
+        ¡Toda validacion del formulario se debe validar a nivel de programacion en JS idealmente si esa informacion se envia 
+        a una base de datos antes de insertar o modificar los datos en el sistema tambien tendria que validarse a lado del servidor(php node, js)!
+    -->
+    <h3>Ejemplo de formulario</h3>
+    <h4>Formulario de login</h4>
+    <form action="https://jonmircha.com/" method="POST" autocomplete="off">
+        <label for="usuario">Usuario: </label>
+        <input type="text" name="usuario" id="usuario" placeholder="escribe tu usuario" pattern="^[A-Za-z]+$" title="el campo solo acepta letras" required>
+        <br>
+        <!-- <input type="text" name="email" autocomplete="off"> -->
+        <br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" placeholder="escribe tu password" required>
+        <br>
+        <input type="submit">
+        <br>
+        <input type="reset">
+    </form>
 
     <a href="index.html#inicio">☝️</a>
+    <hr>
     <hr>
     <hr>
     <hr>
