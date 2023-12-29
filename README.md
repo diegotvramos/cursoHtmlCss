@@ -354,3 +354,39 @@ FAVICON- son los iconos pequeños que aparecen en las pestañas de los navegador
     <!-- podemos cambiar el color de la barra de direcciones para los mobiles-->
     <meta name="theme-color" content="#ff6600">`
 
+
+
+_META ETIQUETAS PARA REDES SOCIALES_
+
+cuando copiamos y pegamos un link a nuestras redes sociales, se nos muestra con una previsualizacion y una pequeña informacion del sitio web.
+
+cada red social tiene herramientas para desarrolladores web para poder interactuar
+
+https://developers.facebook.com/docs/plugins/page-plugin/ 
+
+la mayoria de las redes sociales trabajan con este formato de:
+https://ogp.me/ 
+
+y tambien usan sus propias metaEtiquetas
+
+debe ser diferente para cada pagina que tengas
+
+
+<h2>Accesibilidad Web</h2>
+son estos mecanismos que a las personas que tienen problemas visuales, ciertas discapacidades, muestra con ciertos contrastes de color, 
+
+aria= accesibility,  reach internet accesibilitey aria accesibility rech
+wai= web accesibility internet.
+
+tiene que entrar como Etica como desarrolladores y diseñadores, el preucuparse por que nuetro codigo sea accesible, es pensar en esas personas que tienen discapacidades visuales, auditivas, interaccion con todas estas tecnologias que se encuentran en la internet, trata de ponerlos, es unmundo.
+
+personas Daltonicas
+
+los Frameworks como botstrap como fundation, materialize, sementic iai, taywild ya llevan  en sus etiquetas la Accesibilidad
+
+https://www.w3.org/news/2021/first-public-working-draft-w3c-accessibility-guidelines-wcag-3-0/ 
+
+https://html5accessibility.com/ 
+
+https://web.dev/explore/accessible?hl=es-419 
+
