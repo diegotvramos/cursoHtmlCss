@@ -7,7 +7,12 @@
     <!-- title entre 55 y 65 caracteres -->
     <meta name="description" content="en esta pagina estamos aprendiendo fundamentos de HTML CON JON">
     <!--    no mas de 165 caracteres -->
-
+    <link rel="canonical" href="">
+    <link rel="icon" href="/assets/favicon.png">
+    <!-- para los dispositivos mobiles -->
+    <link rel="apple-touch-icon" href="/assets/favicon.png">
+    <!-- podemos cambiar el color de la barra de direcciones para los mobiles-->
+    <meta name="theme-color" content="#ff6600">
     <style>
         h2{
             color: orangered;
@@ -49,6 +54,8 @@
         <li><a href="index.html#iframes">Iframes (carga paginas externas)</a></li>
         <li><a href="index.html#formularios">formulario</a></li>
         <li><a href="index.html#atributos-formularios">Atributos de inputs y Formularios</a></li>
+        <li><a href="index.html#data-atributes">Data Attributes</a></li>
+        <li><a href="index.html#metas-seo">MetaEtiquetas para SEO</a></li>
 
         
     </ul>
@@ -558,6 +565,92 @@
         <br>
         <input type="reset">
     </form>
+    <hr>
+    <h4>Selects, Radios y Checkboxs</h4>
+
+    <!-- http://127.0.0.1:5500/index.html?idioma=it#atributos-formularios 
+        multiple= es un atributo
+        http://127.0.0.1:5500/index.html?idioma=fr&idioma=it&idioma=pt#atributos-formularios 
+        
+        si quieres que una opcion esté seleccionada predeterminadamente usa el atributo booleano SELECTED
+
+        http://127.0.0.1:5500/index.html?idioma=&lenguaje=on#atributos-formularios 
+    -->
+
+    <form>
+        <p>Elige tu idioma:</p>
+        <select name="idioma">
+            <option value="" selected>Elige una opcion</option>
+            <option value="es" >Español</option>
+            <option value="en">Ingles</option>
+            <option value="fr">Frances</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Portugues</option>
+        </select>
+        <p>Elige tu lenguaje de programacion favorito</p>
+        <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+        <label for="radio-js">javaScript</label>
+        <input type="radio" name="lenguaje" id="radio-py" value="py" checked>
+        <label for="radio-py">Python</label>
+        <input type="radio" name="lenguaje" id="radio-php" value="php">
+        <label for="radio-php">php</label>
+        <p>Elige tus intereses</p>
+
+        <!-- otra forma de manipular las etiquetas con su respectivo input -->
+        <label>
+            <input type="checkbox" name="intereses" value="deportes" checked>
+            Deportes
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="finanzas" checked>
+            Finanzas
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="salud">
+            Salud
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="politica">
+            Política
+        </label>
+        <label>
+            <input type="checkbox" name="intereses" value="ecologia">
+            Ecología
+        </label>
+        <br>
+        <p>
+            <label>
+                <input type="checkbox" name="terminos" required>
+                ¿Aceptas terminos y condiciones?
+            </label>
+        </p>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <hr>
+    <h4>Formulario de Contacto</h4>
+
+    <form action="https://formsubmit.co/00dramos@gmail.com" method="POST">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúüÜñÑ\s'-]+" title="Nombre- solo acepta letras y espacios en blanco" required>
+        <br>
+        <input type="email" name="correo" placeholder="Escribe tu correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Formato de correo invalido" required>
+        <br>
+        <textarea name="comentarios" cols="30" rows="5" required></textarea>
+        <input type="submit">
+    </form>
+    <a href="index.html#inicio">☝️</a>
+    <hr>
+    <h2 id="data-atributes">Data Attributes</h2>
+    <ul>
+        <li data-id="1" data-name="spring">Primavera</li>
+        <li data-id="2" data-name="summer">Verano</li>
+        <li data-id="3" data-name="outumn">Otoño</li>
+        <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+    <a href="index.html#inicio">☝️</a>
+    <hr>
+
+    <h2 id="metas-seo">MetaEtiquetas para SEO</h2>
 
     <a href="index.html#inicio">☝️</a>
     <hr>

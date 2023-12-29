@@ -304,4 +304,53 @@ a una base de datos antes de insertar o modificar los datos en el sistema tambie
         <input type="reset">
     </form>
 ´´
+<h4>Selects, Radios y Checkboxs</h4> 
+
+en esta seccion veremos como se envian y como el formulario va mandar en formato de variable los valores de los selects que vienen a ser listas de los radio buttons y de los checkbox de hecho estos elementos te pueden servir para encuestas,
+
+>- si quieres que alguna de las opciones queda cargada por defecto le agregas el atributo *SELECTED*
+_LOS RADIO BOTONES_
+va servir cuando tu tengas que elegir de diferentes opciones solo una.
+el label sirve para acompañar al radio boton.
+tanto los Checkboxs como los RadioButtons los valores son como los interuptores {ON || OFF}.
+Cuando vayas a tener un grupo de Inputs Radios de donde solamente vas a poder seleccionar una opcion entonces al atributo NAME tiene que ser exactamente igual en los 3
+
+>- checked- es un atributo booleano que nos permite seleccionar predeterminadamente una opcion
+
+_LOS CHECKBOXS_
+la intencion de los Checkboxs es para que los usuarios puedan seleccionar mas de una.
+
+> *_trata de poner valores VALUE="" siempre en ingles para evitar poner acentos (CARACTERES AJENOS AL INGLES)_*
+
+puedes no ponerle VALUE ya que el usario al seleccionar automaticamente se va poner en ON
+
+*FORMULARIO DE CONTACTO*
+hazme expresiones regulares para que el usuario ingrese correo electrónico en un formulario html. 
+`<input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>`
+
+para que el formulario funcione vamos a usar un servicio de envio de formulario.
+https://formsubmit.co/ 
+
+si solo hacemos 2ble click en el archivo, estamos abriendo desde el el archivo local(usamos el protocolo FILE)
+lo que necesitamos es ejecutarlo en un entorno de servidor. por eso instala LIVE SERVER
+
+<h2>Data Attributes</h2>
+
+HTML nos permite agregarles atributos que nosotros nos inventamos a las etiquetas como ids nombre etc.
+Lo usan mucho frameworks como BOOTSTRAP DATA- ALGO DATA- ALGO, DATA-ALGO.
+
+
+<h2>MetaEtiquetas para SEO</h2>
+
+Te pueden servir para ayudar al posicionamiento de motores de busqueda es decir para conbribuir al SEO de tus documentos HTML.
+
+_*canonical*_- tu puedes tener varias URLs para llegar a un mismo contenido pero aca le decis al navegador cual es la IMPORTANTE. Solo pones cuando ya sabes el dominio donde va estar alojada tu sitio web
+
+FAVICON- son los iconos pequeños que aparecen en las pestañas de los navegadores, tiene que ser cuadrado perfecto, de preferencia en formato PNG  PUNTO.ICO(viejita)
+ ` <link rel="canonical" href="">
+    <link rel="icon" href="/assets/favicon.png">
+    <!-- para los dispositivos mobiles -->
+    <link rel="apple-touch-icon" href="/assets/favicon.png">
+    <!-- podemos cambiar el color de la barra de direcciones para los mobiles-->
+    <meta name="theme-color" content="#ff6600">`
 
