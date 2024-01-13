@@ -31,6 +31,21 @@ lo recomendable es ir a la documentacion, foros
 
 ## Estructura basica de un documento html
 
+```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hola</title>
+    </head>
+    <body>
+        <h1>Hola, este es otro documento html</h1>
+        <a href="index.html">Regresar al Index</a>
+    </body>
+    </html>
+```
+
 hipertext: en griego significa NAVEGACION.
 
 **head** 
@@ -96,6 +111,15 @@ todo lo nuevo que vaya saliendo siempre es en Ingles, entonces el Ingles debe se
 ## Encabezados
 nos va permitir titularizar nuestro contenido
 
+```html
+    <h1 style="background-color: hotpink;">Encabezado de nivel 1 solo puede existir un h1 por documento html</h1>
+    <h2>Encabezado de nivel 2</h2>
+    <h3>Encabezado de nivel 3</h3>
+    <h4>Encabezado de nivel 4</h4>
+    <h5>Encabezado de nivel 5</h5>
+    <h6>Encabezado de nivel 6</h6>
+```
+
 **Por cuestiones de posicionamiento de SEO _en cada documento html debes de tener un solo titulo H1_ CUANDO los algoritmos (claurels) los algoritmos de los buscadores,  van y revisan nuestro codigo html siempre se fijan en el H1**
 
 es buena practica que solo exista un solo H1
@@ -133,8 +157,10 @@ cuando hacemos una tesis, hacemos referencias a fichas bibliograficas libros men
 
 despues de los `h's h1...` ya tienen un salto nativo
 
-`<br>`
-`<hr>` es un salto semantico de contenido
+```html
+    <br>
+    <hr> es un salto semantico de contenido
+```
 
 https://madebymike.github.io/html5-periodic-table/#strong 
 
@@ -152,6 +178,10 @@ https://madebymike.github.io/html5-periodic-table/#strong
             </pre>`
 
 la etiqueta ``<pre></pre>`` respeta el formateo que tu le estes dando
+
+```html
+    <pre></pre>
+```
 
 *** 
 
@@ -216,19 +246,26 @@ HAY 3 formas de aplicar estilos en cascada
 
 primera forma: en los atributos de la etiqueta, otra abrir estilos css en la cabecera [ es importante utilizar las clases y en la medida de lo posible evitar ids para evitar los estilo]
 
-`<style></style>`
+```html
+    <style></style>
+```
 
 ## Scripts en HTML
 DEBEN IR AL FINAL ANTES DEL CIERRE DE LA ETIQUETA BODY.
 LO IDEAL ES QUE ESTÉ EN UN ARCHIVO INDEPENDIENTE.
-`<script></script>`
+
+```html
+ <script></script>
+```
 
 ## imagenes
 
 `SRC= source`. ORIGEN O FUENTE
 formatos soportados: jpg, png, gif, svg(es un vector)
 la altura y la anchura lo debemos modificar desde el codigo CSS 
-`<img src="assets/html-periodic-table.png" width="600" height="400" alt="TABLA" >`
+```html
+    <img src="assets/html-periodic-table.png" width="600" height="400" alt="TABLA" >
+```
 
 ## vectores SVG 
 
@@ -246,7 +283,7 @@ cuando se hace una pagina web ya es mas comun pedirlas en vector
 recuerdas que en la primaria teniamos libros de historia, geografia, biologia y al pie de esas imagenes decia: fugura 1.1 ciclo del agua,
 tambien podemos agregar un video que tenga nota al pie
 
-alt= texto alternativo para los scren reader (las personas que no pueden ver)
+**alt=** texto alternativo para los scren reader (las personas que no pueden ver)
 
 ```html
     <figure>
@@ -385,7 +422,9 @@ debemos hacer uso de un atributo llamado *target="_blank"* es como el objetivo, 
 
 para aclarar que nustra pagina no forma parte de el otro sitio
 
-`<a href="https://jonmircha.com" target="_blank" rel="nofollow">visita mi sitio web jonmircha.com</a>`
+```html
+    <a href="https://jonmircha.com" target="_blank" rel="nofollow">visita mi sitio web jonmircha.com</a>
+```
 
 ## enlaces internos
 
@@ -393,7 +432,9 @@ sirve para mostrar la seccion de nuestra pagina usando el simbolo # en el _a hre
 https://emojipedia.org/
 a parte de que los enlaces nos sirven para generar anclas internas y poder acceder hacia otras rutas paginas, aplicaciones documentos html ya sean externos o internos dentro de nuestro sitio de aplicacion tambien podemos acceder hacia otros protocolos por ejemplo podriamos activar que mediante un enlace se abriera la aplicacion que tenemos predeterminada de correo electronico para poder mandar un mensaje de correo electronico tambien podriamos acceder a marcar un telefono oviamente desde nuestra pc no va funcionar, pero si lo consumimos desde nuestro telefono movil este tipo de protocolos si van a funcionar.
 
-`<a href="index.html#inicio">☝️</a>`
+```html
+    <a href="index.html#inicio">☝️</a>
+```
 
 ## enlaces y protocolos especiales
 
@@ -591,35 +632,29 @@ pdf- son documentos que el navegador interpreta por si solos.
     <br>
  ```
 
-el atributo action es hacia donde se va enviar 
-name- nombre de variable de formulario que se va crear para cada uno de los inputs
-https://jonmircha.com/?usuario=diego&password=1234 METODO GET
-el metodo GET es el metodo predeterminado de lso formularios y va enviar por la URL los valores
-POST- lo va enviar en las cabezeras del documento lo va enviar (de forma oculta)
+**action** el atributo `action` es hacia donde se va enviar.
+**name**- nombre de variable de formulario que se va crear para cada uno de los inputs.
+https://jonmircha.com/?usuario=diego&password=1234 
+**METODO GET** el metodo GET es el metodo predeterminado de los formularios y va enviar por la URL los valores
+**POST**- lo va enviar en las cabezeras del documento lo va enviar (de forma oculta)
 
 https://jonmircha.com/
 
-ya en la practica profecional el envio de los formularios generalmente se controla con programacion javascript e incluso
-haciendo peticiones con AJAX 
+>- _ya en la practica profecional el envio de los formularios generalmente se controla con programacion javascript e incluso haciendo peticiones con AJAX_ 
 
-el NAME si o si debe tener el ID es opcional
-al poner el valor usuario tanto en el atributo FOR de la etiqueta LABEL, y el ID de el INPUT estos se vinculan y lo podemos
-probar haciendo click en el label, y esto automaticamente saltará al input vinculado
+el **NAME** si o si debe tener el ID es opcional
+al poner el valor usuario tanto en el atributo _FOR_ de la etiqueta LABEL, y el _ID_ de el _INPUT_ estos se vinculan y lo podemos probar haciendo click en el label, y esto automaticamente saltará al input vinculado
 
-required- es un atributo booleano nos obliga a completar el campo
+**required**- es un atributo booleano nos obliga a completar el campo
 
-pattern - es para las expreciones regulares
+**pattern** - es para las expreciones regulares
 
-title-  lo usa como mensaje de validacion
+**title**-  lo usa como mensaje de validacion
 
-¡Toda validacion del formulario se debe validar a nivel de programacion en JS idealmente si esa informacion se envia 
-a una base de datos antes de insertar o modificar los datos en el sistema tambien tendria que validarse a lado del servidor(php node, js)!
-´´
-### Ejemplo de formulario
-
-#### Formulario de login
+>- **Nota**¡ Toda validacion del formulario se debe validar a nivel de programacion en JS idealmente si esa informacion se envia a una base de datos antes de insertar o modificar los datos en el sistema tambien tendria que validarse a lado del servidor(php node, js)!.
 
 ```html
+    <h4>Formulario de login</h4>
     <form action="https://jonmircha.com/" method="POST" autocomplete="off">
         <label for="usuario">Usuario: </label>
         <input type="text" name="usuario" id="usuario" placeholder="escribe tu usuario" pattern="^[A-Za-z]+$" title="el campo solo acepta letras" required>
@@ -704,7 +739,9 @@ Cuando vayas a tener un grupo de Inputs Radios de donde solamente vas a poder se
 **FORMULARIO DE CONTACTO**
 
 hazme expresiones regulares para que el usuario ingrese correo electrónico en un formulario html. 
-`<input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>`
+```html
+    <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+```
 
 para que el formulario funcione vamos a usar un servicio de envio de formulario.
 https://formsubmit.co/ 
