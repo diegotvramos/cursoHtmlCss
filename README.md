@@ -244,7 +244,7 @@ las etiquetas de bloque son __evidiosas__ por que van a ocupar todo el ancho dis
 ## Estilos en HTML; estilos CSS en HTML
 HAY 3 formas de aplicar estilos en cascada
 
-primera forma: en los atributos de la etiqueta, otra abrir estilos css en la cabecera [ es importante utilizar las clases y en la medida de lo posible evitar ids para evitar los estilo]
+primera forma: en los atributos de la etiqueta, otra abrir estilos css en la cabecera [ es importante utilizar las clases y en la medida de lo posible evitar ids para los estilos]
 
 ```html
     <style></style>
