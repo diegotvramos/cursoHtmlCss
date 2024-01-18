@@ -1,5 +1,7 @@
 # curso de HTML y CSS
 
+**_[link](https://diegotvramos.github.io/cursoHtmlCss/)_**
+
 https://jonmircha.com/index.html el index(es una convencion al archivo principal que carga tu proyecto se llama index .html) esta oculto en la pagina principal de jonmircha.
 solo hay un index.
 
