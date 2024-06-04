@@ -804,7 +804,50 @@ https://developers.facebook.com/docs/plugins/page-plugin/
 la mayoria de las redes sociales trabajan con este formato de:
 https://ogp.me/ 
 
-y tambien usan sus propias metaEtiquetas, debe ser diferente para cada pagina que tengas
+y tambien usan sus propias metaEtiquetas, debe ser diferente para cada pagina que tengas.
+
+En resumen:
+
+```html
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Studio Manchas - ¿Necesitas un sitio web hermoso?</title>
+    <!-- title entre 50 a 70 caracteres -->
+
+    <meta name="description" content="Elaboro páginas web hermosas y atractivas para tu compañia, negocio, marca, servicio o producto"><!-- 110 a 160 caracteres -->
+    <link rel="canonical" href="https://diegotvramos.github.io/maquetacion-studio/">
+    <meta name="robots" content="index, follow">
+
+    <!-- Metaetiquetas para Redes Sociales (Open Graph) -->
+
+
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#FFC0CB">
+    <!-- definir el color del tema de la interfaz del navegador en dispositivos móviles -->
+    
+
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" name="twitter:url" content="https://diegotvramos.github.io/maquetacion-studio/">
+    <meta property="og:title" name="twitter:title" content="studio Manchas - diegotvramos">
+    <meta property="og:description" name="twitter:description" content="Elaboro páginas web hermosas y atractivas para tu compañia, negocio, marca, servicio o producto">
+    <meta property="og:image" name="twitter:image" content="https://diegotvramos.github.io/maquetacion-cv/assets/miniatura-maquetacion-studio.jpg">
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+</head>
+```
+
+
+
+
 
 ## Accesibilidad Web
 
